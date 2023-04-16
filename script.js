@@ -1,13 +1,13 @@
 function run(){
     var data=document.getElementById("inp1").value
     var count=0
-     var special="#$%^&*,-_!%^()[]{};:''?/><|\  "
+     var special="#$%^&*,-_!%^()[]{};:'?/><|\+="
 
     // var ar=[]
     // var alp="abcdefghijklmnopqrstuvwxyz123456789."
     var num=0
     for(var i=0;i<data.length;i++){
-        if(special.includes(data[i])){
+        if(special.includes(data[i]) && data[i]=='"'){
              alert("invalid")
              return
             // break
