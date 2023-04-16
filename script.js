@@ -1,7 +1,7 @@
 function run(){
     var data=document.getElementById("inp1").value
     var count=0
-    var special="#$%^&*,-_"
+    var special="#$%^&*,-_{}[]"
     // var ar=[]
     // var alp="abcdefghijklmnopqrstuvwxyz123456789."
     var num=0
@@ -22,12 +22,12 @@ function run(){
         
 
     }
-    if(num>0 && num!=data.length-1 && count==1){
+    if(num>0 && num!=data.length-1 && count==1 && num>=6){
         alert("valid")
-}
-else{
-    alert("invalid")
-}
+    }
+    else{
+        alert("invalid")
+    }
 }
 //     console.log(ar)
 //     if(count==1 && num>6){
